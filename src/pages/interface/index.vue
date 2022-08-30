@@ -1,0 +1,3 @@
+<template>
+  <VideoPlayer />
+</template>
