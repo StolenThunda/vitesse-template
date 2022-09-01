@@ -1,8 +1,13 @@
 button:
   about: これは？
   back: 戻る
+  back5: 戻る 5 秒
+  clearLoop: クリアループ
   go: 進む
   home: ホーム
+  loopEnd: ループエンドの設定
+  restart: 再起動
+  restart2: 最初に戻る
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
 intro:

@@ -1,12 +1,22 @@
 <template>
-  <div class="relative flex max-w-fit max-w-fit justify-center content-center rounded-2xl mx-auto">
+  <section class="relative flex w-full h-auto  ">
     <video
+      muted
+      autoplay
+      crossorigin
       @click=" play "
-      src="https://media.vimejs.com/720p.mp4"
+      :poster="props.poster"
+      :src="props.srcURL"
       id="video"
-      class="w-full h-full rounded-2xl"
+      :type="getType()"
     />
-    <div class="controls ">
+    <!-- class="mx-auto min-w-fit min-h-fit rounded-2xl" -->
+
+    <div
+      class="controls "
+      hideOnMouseLeave
+      :activeDuration="2000"
+    >
       <div class="timeline ">
         <div
           class="mx-auto text-sm max-w-fit"
@@ -22,7 +32,7 @@
       </div>
       <div>
         <button
-          class="btn"
+          class="player-btn"
           @click=" play "
         >
           <div
@@ -35,7 +45,7 @@
           ></div>
         </button>
         <button
-          class="btn"
+          class="player-btn"
           @click=" rewind( 0 ) "
         >
           <div
@@ -45,7 +55,7 @@
         </button>
         <button
           @click=" scan5( -5 ) "
-          class="btn "
+          class="player-btn "
         >
           <div
             class="i-mdi-rewind-5"
@@ -54,7 +64,7 @@
         </button>
         <button
           @click=" scan5() "
-          class="btn "
+          class="player-btn "
         >
           <div
             class="i-mdi-fast-forward-5"
@@ -63,10 +73,9 @@
         </button>
         <button
           @click=" setLoopTime "
-          class="btn"
+          class="player-btn"
           data-loop="A"
         >
-          <!-- :disabled="!state.video.playing" -->
           <div
             class="i-mdi-movie-open-edit"
             title="Set Loop Start"
@@ -74,7 +83,7 @@
         </button>
         <button
           @click=" setLoopTime "
-          class="btn "
+          class="player-btn "
           data-loop="B"
         >
           <div
@@ -84,36 +93,53 @@
         </button>
         <button
           @click=" loop "
-          class="btn looper"
+          class="player-btn looper"
           :disabled=" !loopSet "
         >
           <div class="i-mdi-autorenew"></div>
         </button>
         <button
           @click=" settings "
-          class="btn "
+          class="player-btn "
         >
           <div class="i-mdi-cog"></div>
         </button>
         <button
           @click=" test "
-          class="btn "
+          class="player-btn "
         >
           <div class="i-mdi-tune"></div>
         </button>
-        <!-- <button
-            class="bg-transparent bg-white font-black btn"
-            @click="fullScreen"  >
-            <div class="i-mdi-fullscreen"></div>
-          </button> -->
-        <!-- <button @click="download" ><div class="i-mdi-cloud-download"></div></button> -->
+        <button
+          class="bg-transparent bg-white font-black btn"
+          @click="fullScreen"
+        >
+          <div class="i-mdi-fullscreen"></div>
+        </button>
+        <button @click="download">
+          <div class="i-mdi-cloud-download"></div>
+        </button>
       </div>
     </div>
-  </div>
+  </section>
 </template>
-<script setup>
+<script setup >
 import { onMounted, computed, } from "vue";
+
+const props = defineProps( {
+  srcURL: {
+    type: [String],
+    required: true
+  },
+  poster: {
+    type:String,
+    required: true,
+    default:'https://media.vimejs.com/poster.png' 
+  }
+})
+
 const state = reactive( {
+  root: null,
   btnPause: null,
   btnPlay: null,
   btnLooper: null,
@@ -140,7 +166,7 @@ onMounted( () => {
   state.timelineInnerBar = document.querySelector( '.inner' )
 
   // set the pause button to display:none by default
-  state.btnPause.style.display = "none"
+  if (state.btnPause) state.btnPause.style.display = "none"
   // update the progress bar
   state.video.addEventListener( "timeupdate", () => {
     state.elapsed = state.video.currentTime
@@ -188,6 +214,23 @@ watch(
     }
   }
 )
+const getType = () => {
+  if ( props.srcURL ) {
+    const file = props.srcURL.split( '.' )
+    const ext = file[file.length - 1]
+    console.log( { ext } )
+    switch ( ext ) {
+      case 'ogg':
+      case 'mp3':
+        return `audio/${ext}`
+        break;
+
+      default:
+        break;
+    }
+  }
+    return 'video/mp4'
+}
 const elapsedTime = computed( () => {
   return MHSTime( state.elapsed )
 } )
@@ -236,11 +279,13 @@ const __deactivateLoopButton = () => {
   state.icoLooper.classList.remove( 'animate-spin' )
 }
 const __resetPlayButton = () => {
+  if ( !state.btnPlay ) return;
    state.btnPlay.style.display = "block"
   state.btnPause.style.display = "none"
 }
 
-const __updateProgress = (width) => {
+const __updateProgress = ( width ) => {
+  if ( !state.timelineInnerBar ) return;
   state.timelineInnerBar.style.width = `${width}`
 }
 
@@ -352,4 +397,5 @@ const MHSTime = ( seconds ) => {
 [loopPlaying] {
   background-color: red;
 }
+
 </style>

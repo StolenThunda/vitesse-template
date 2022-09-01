@@ -1,5 +1,22 @@
 {
-  "cSpell.words": ["Vitesse", "Vite", "unocss", "vitest", "vueuse", "pinia", "demi", "antfu", "iconify", "intlify", "vitejs", "unplugin", "pnpm"],
+  "cSpell.words": [
+    "antfu",
+    "autorenew",
+    "demi",
+    "iconify",
+    "intlify",
+    "pinia",
+    "pnpm",
+    "unocss",
+    "unplugin",
+    "vime",
+    "Vite",
+    "vitejs",
+    "Vitesse",
+    "vitest",
+    "vnode",
+    "vueuse"
+  ],
   "i18n-ally.sourceLanguage": "en",
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",
@@ -11,5 +28,6 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

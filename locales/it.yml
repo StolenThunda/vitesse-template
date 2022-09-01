@@ -1,8 +1,13 @@
 button:
   about: Su di me
   back: Indietro
+  back5: Indietro 5 sec
+  clearLoop: Cancella ciclo
   go: Vai
   home: Home
+  loopEnd: Imposta fine ciclo
+  restart: Ricomincia
+  restart2: Torna all'inizio
   toggle_dark: Attiva/disattiva modalità scura
   toggle_langs: Cambia lingua
 intro:

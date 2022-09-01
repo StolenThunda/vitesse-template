@@ -11,7 +11,8 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    ['btn', 'px-4 py-1 rounded inline-block bg-transparent text-gray-200 cursor-pointer hover:bg-dark disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 active:bg-white active:text-black'],
+    ['btn', 'px-4 py-1 m-2 rounded inline-block bg-light text-gray-500 cursor-pointer  border-white hover:bg-dark disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 active:bg-white active:font-black'],
+    ['player-btn', 'px-4 py-1 m-2 rounded inline-block bg-transparent text-gray-200 cursor-pointer hover:bg-dark disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 active:bg-white active:text-black'],
     ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
     ['controls', 'bottom-10 w-full justify-around absolute flex-col opacity-25 transition-opacity hover:opacity-100 text-3xl'],
     ['timeline', 'm-x-5 flex-1 content-center border-x-4 z-40'],

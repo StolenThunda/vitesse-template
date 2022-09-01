@@ -15,10 +15,12 @@
     "up": "taze major -I"
   },
   "dependencies": {
+    "@vidstack/player": "^1.6.3",
     "@vime/core": "^5.3.1",
     "@vime/vue-next": "^5.3.1",
     "@vueuse/core": "^9.1.0",
     "@vueuse/head": "^0.7.9",
+    "lit": "^2.3.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.17",
     "vue": "^3.2.37",

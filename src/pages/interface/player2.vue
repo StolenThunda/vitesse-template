@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col">
-    <div>
+  <div class="flex flex-col clear-both">
+    <div class="isolate">
 
       <label
         for="src"
@@ -11,7 +11,7 @@
         v-model="sourceURL"
       />
       <button
-        @click="setUrl"
+        @click=" setUrl('https://media.vimejs.com/720p.mp4')"
         class="btn"
       >Set Url</button>
       <button
@@ -19,20 +19,21 @@
         class="btn"
       >Clear Url</button>
     </div>
-    <!-- <VideoPlayer  class="mt-10 pt-10" :srcURL="sourceURL" /> -->
-    <vime-player
-      v-if="sourceURL != ''"
+    <VideoPlayer
+      v-model="sourceURL"
       :srcURL="sourceURL"
-    ></vime-player>
-    <!-- <VidStackPlayer
-      v-if="sourceURL != ''"
-      :srcURL="sourceURL"
-    /> -->
+      poster="https://media.vimejs.com/poster.png"
+    ></VideoPlayer>
   </div>
 </template>
 <script setup>
-const sourceURL = ref( "" )
+const sourceURL = ref( null)
 const setUrl = (val) => {
-  sourceURL.value = (typeof val === 'string') ? val : "https://media.vimejs.com/720p.mp4"
-  }
+  sourceURL.value = ( val !== '' ) ? val : "https://media.vimejs.com/720p.mp4"
+}
+
 </script>
+<route lang="yaml">
+meta:
+  layout: player
+</route>

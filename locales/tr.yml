@@ -1,14 +1,19 @@
 button:
   about: Hakkımda
   back: Geri
+  back5: 5 saniye geri
+  clearLoop: Döngüyü Temizle
   go: İLERİ
   home: Anasayfa
+  loopEnd: Döngü Sonunu Ayarla
+  restart: Tekrar başlat
+  restart2: Başa dönüş
   toggle_dark: Karanlık modu değiştir
   toggle_langs: Dilleri değiştir
 intro:
+  aka: Ayrıca şöyle bilinir
   desc: Görüşlü Vite Başlangıç Şablonu
   dynamic-route: Dinamik rota demosu
   hi: Merhaba, {name}!
-  aka: Ayrıca şöyle bilinir
   whats-your-name: Adınız nedir?
 not-found: Bulunamadı

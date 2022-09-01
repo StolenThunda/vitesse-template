@@ -1,14 +1,19 @@
 button:
   about: Tentang
   back: Kembali
+  back5: Kembali 5 detik
+  clearLoop: Hapus Lingkaran
   go: Pergi
   home: Beranda
+  loopEnd: Setel Akhir Lingkaran
+  restart: Mengulang kembali
+  restart2: Kembali ke awal
   toggle_dark: Ubah ke mode gelap
   toggle_langs: Ubah bahasa
 intro:
+  aka: Juga diketahui sebagai
   desc: Template awal vite
   dynamic-route: Contoh rute dinamik
   hi: Halo, {name}!
-  aka: Juga diketahui sebagai
   whats-your-name: Siapa nama anda?
 not-found: Tidak ditemukan

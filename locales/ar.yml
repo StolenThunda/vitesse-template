@@ -1,14 +1,20 @@
 button:
   about: حول
   back: رجوع
+  back5: رجوع 5 ثوانى
+  clearLoop: حلقة واضحة
+  forward5: إعادة توجيه 5 ثوان
   go: تجربة
   home: الرئيسية
+  loopEnd: تعيين نهاية الحلقة
+  restart: إعادة بدء
+  restart2: العودة إلى البداية
   toggle_dark: التغيير إلى الوضع المظلم
   toggle_langs: تغيير اللغة
 intro:
+  aka: معروف أيضا تحت مسمى
   desc: vite مثال لتطبيق
   dynamic-route: عرض لتوجيهات ديناميكية
   hi: مرحبا {name}
-  aka: معروف أيضا تحت مسمى
   whats-your-name: ما إسمك؟
 not-found: صفحة غير موجودة

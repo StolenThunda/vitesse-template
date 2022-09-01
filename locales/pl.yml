@@ -1,14 +1,19 @@
 button:
   about: O nas
   back: Wróć
+  back5: Powrót 5 sekund
+  clearLoop: Wyczyść pętlę
   go: WEJDŹ
   home: Strona główna
+  loopEnd: Ustaw koniec pętli
+  restart: Uruchom ponownie
+  restart2: Powrót do początku
   toggle_dark: Ustaw tryb nocny
   toggle_langs: Zmień język
 intro:
+  aka: Znany też jako
   desc: Opiniowany szablon startowy Vite
   dynamic-route: Demonstracja dynamicznego route
   hi: Cześć, {name}!
-  aka: Znany też jako
   whats-your-name: Jak masz na imię?
 not-found: Nie znaleziono

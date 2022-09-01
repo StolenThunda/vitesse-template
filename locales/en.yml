@@ -1,15 +1,24 @@
 button:
   about: About
   back: Back
+  back5: Back 5 sec
+  clearLoop: Clear Loop
+  end: End
+  forward5: Forward 5 sec
   go: GO
   home: Home
+  interface: Media Player
+  loop: Loop
+  restart: Restart
+  restart2: Back to the beginning
+  setLoop: Set Loop
+  start: Start
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
-  interface: Media Player
 intro:
+  aka: Also known as
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
-  aka: Also known as
   whats-your-name: What's your name?
 not-found: Not found

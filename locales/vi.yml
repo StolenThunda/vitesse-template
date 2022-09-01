@@ -1,8 +1,13 @@
 button:
   about: Về
   back: Quay lại
+  back5: Quay lại 5 giây
+  clearLoop: Xóa vòng lặp
   go: Đi
   home: Khởi đầu
+  loopEnd: Đặt kết thúc vòng lặp
+  restart: Khởi động lại
+  restart2: Trở lại từ đầu
   toggle_dark: Chuyển đổi chế độ tối
   toggle_langs: Thay đổi ngôn ngữ
 intro:

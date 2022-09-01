@@ -1,8 +1,13 @@
 button:
   about: О шаблоне
   back: Назад
+  back5: Назад 5 сек.
+  clearLoop: Очистить цикл
   go: Перейти
   home: Главная
+  loopEnd: Установить конец цикла
+  restart: Запустить снова
+  restart2: Назад к началу
   toggle_dark: Включить темный режим
   toggle_langs: Сменить язык
 intro:

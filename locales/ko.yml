@@ -1,8 +1,13 @@
 button:
   about: 소개
   back: 뒤로가기
+  back5: 뒤로 5초
+  clearLoop: 루프 지우기
   go: 이동
   home: 홈
+  loopEnd: 루프 종료 설정
+  restart: 재시작
+  restart2: 처음으로 돌아가기
   toggle_dark: 다크모드 토글
   toggle_langs: 언어 변경
 intro:
