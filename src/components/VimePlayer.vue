@@ -1,28 +1,40 @@
 <template>
   <Player
-  muted
+    muted
     ref="player"
+    id="player"
     @vmCurrentTimeChange="onTimeUpdate"
+    :key="pKey"
   >
-    <!-- <Youtube videoId="DyTCOwB0DVw" /> -->
+    <div id="playerContent">
+
+    </div>
+    <Youtube
+      id="YTProvider"
+      :videoId="props.videoId"
+      v-if="props.type === 'youtube'"
+    />
+    >
+    <Vimeo
+      id="VimeoProvider"
+      :videoId="props.videoId"
+      v-if="props.type === 'vimeo'"
+    />
     <Video
+      id="videoProvider"
       crossorigin=""
       :poster="poster"
+      v-if="props.type === 'video'"
     >
       <source
         :data-src="props.srcURL"
         type="video/mp4"
       />
-      <!-- <track
-        default
-        kind="subtitles"
-        src="https://media.vimejs.com/subs/english.vtt"
-        srclang="en"
-        label="English"
-      /> -->
+
     </Video>
 
     <Ui>
+      <ClickToPlay />
       <Scrim />
       <Spinner />
       <Poster />
@@ -44,16 +56,17 @@
   </Player>
 </template>
 
-<script>
+<script lang="ts">
 export default {
 name: 'VimePlayer',
 };
 </script>
 
-<script setup>
+<script setup lang="ts">
 import {
     Video,
-    // Youtube,
+  Youtube,
+  Vimeo,
   Player,
   SettingsControl,
   Ui,
@@ -68,42 +81,80 @@ import {
   Spinner,
   Poster,
   ScrubberControl,
-  // usePlayerContext
+  ClickToPlay,
 } from '@vime/vue-next';
-import { useSettingsStore } from "~/store/playerSettings";
 
-const props = defineProps({
-  srcURL: String,
+const props = defineProps< {
+  type: {
+    type: String,
+    default: 'video'
+  },
+  videoId: {
+    type: String,
+    default: ''
+  },
+  srcURL: {
+    type: String,
+    default: ''
+  },
   poster: {
-    type:String,
-    default:"https://media.vimejs.com/poster.png"
+    type: String,
+    default: ''
+    // default:"https://source.unsplash.com/random"
+    // default:"https://media.vimejs.com/poster.png"
   }
-});
+}>();
 
-const settings = useSettingsStore()
 
+watch(() => props.type, (props) => loadPlayer())
+onMounted( () => {
+  loadPlayer()
+})
+
+const loadPlayer = () => {
+  switch ( props.type ) {
+    case 'youtube':
+      createYT()
+      break;
+    case 'vimeo':
+      createVimeo()
+    default:
+      createVideo()
+      break;
+  }
+}
 
 const player = ref( null )
 
-// const currentTime = usePlayerContext( player, 'currentTime', 0 );
 const onTimeUpdate = () => {
-  // if ( settings.looping ) {
-  //   loopCheck()
-  //   console.log( currentTime.value )
-  // }
-}
-const loopCheck = () => {
-  // debugger
-    if ( currentTime.value >= settings.get_end ) currentTime.value = settings.get_start
-}
 
-// }
-// watch(
-//   () => settings.looping,
-//   ( isLooping ) => {
-//     if (isLooping) loopCheck()
-//   }
-// )
+}
+watch( () => ( props ), ( updatedProps: any ) => {
+  // you will get the latest props into updatedProp
+  console.log( 'changed', updatedProps )
+  loadPlayer()
+}, { deep: true } )
+const pKey = computed( () => {
+  if ( props.videoId ) return props.videoId
+  return props.srcURL
+})
+const createVideo = () => {
+  const el = document.getElementById( 'videoProvider' )
+  el?.setAttribute( 'poster', props?.poster ?? '' )
+  el?.setAttribute( 'data-src', props?.srcURL ?? '' )
+  console.log('src changed', props.srcURL)
+}
+const createVimeo = () => {
+  const el = document.getElementById( 'VimeoProvider' )
+
+  el?.setAttribute( 'videoId', props?.videoId ?? '' )
+  console.log('videoId changed', props.videoId)
+}
+const createYT = () => {
+  const el = document.getElementById('YTProvider')
+  el?.setAttribute( 'videoId', props?.videoId ?? '' )
+  console.log('videoId changed', props.videoId)
+}
 </script>
 <style>
   @import "https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css";

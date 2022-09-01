@@ -1,10 +1,8 @@
 <template>
   <main class="px-4 py-2 text-center text-gray-700 dark:text-gray-200">
-    <Footer />
-    <List />
     <RouterView />
-    <div class="mt-5 mx-auto text-center opacity-75 dark:opacity-50 text-sm">
+    <!-- <div class="mt-5 mx-auto text-center opacity-75 dark:opacity-50 text-sm">
       [Player Layout]
-    </div>
+    </div> -->
   </main>
 </template>
