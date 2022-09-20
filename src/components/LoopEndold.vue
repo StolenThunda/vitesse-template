@@ -2,14 +2,14 @@
   <div ref="domRef">
     <Control
       keys="b"
-      :label=" t( 'button.loopEnd' ) "
+      :label=" t( 'button.end' ) "
       @click="setVal"
     >
       <div
         class="i-mdi-movie-edit loop-icon"
-        :title=" t( 'button.loopEnd' )  "
+        :title=" t( 'button.end' )  "
       ></div>
-      <Tooltip>{{ t( 'button.loopEnd' )  }} (b)</Tooltip>
+      <Tooltip>{{ t( 'button.end' )  }} (b)</Tooltip>
     </Control>
   </div>
 </template>

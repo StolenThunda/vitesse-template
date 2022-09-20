@@ -3,14 +3,20 @@ button:
   back: Назад
   back5: Назад 5 сек.
   clearLoop: Очистить цикл
+  end: Конец
+  forward5: Вперед 5 сек.
   go: Перейти
   home: Главная
-  loopEnd: Установить конец цикла
+  interface: Медиа плеер
+  loop: Петля
   restart: Запустить снова
   restart2: Назад к началу
+  setLoop: Установить цикл
+  start: Начинать
   toggle_dark: Включить темный режим
   toggle_langs: Сменить язык
 intro:
+  aka: Также известен как
   desc: Самостоятельный начальный шаблон Vite
   dynamic-route: Демо динамического маршрута
   hi: Привет, {name}!

@@ -3,14 +3,20 @@ button:
   back: Indietro
   back5: Indietro 5 sec
   clearLoop: Cancella ciclo
+  end: Fine
+  forward5: Avanti 5 sec
   go: Vai
   home: Home
-  loopEnd: Imposta fine ciclo
+  interface: Media Player
+  loop: Ciclo continuo
   restart: Ricomincia
   restart2: Torna all'inizio
+  setLoop: Imposta ciclo
+  start: Inizio
   toggle_dark: Attiva/disattiva modalità scura
   toggle_langs: Cambia lingua
 intro:
+  aka: Conosciuto anche come
   desc: Modello per una Applicazione Vite
   dynamic-route: Demo di rotta dinamica
   hi: Ciao, {name}!

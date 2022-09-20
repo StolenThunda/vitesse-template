@@ -3,12 +3,16 @@ button:
   back: رجوع
   back5: رجوع 5 ثوانى
   clearLoop: حلقة واضحة
+  end: نهاية
   forward5: إعادة توجيه 5 ثوان
   go: تجربة
   home: الرئيسية
-  loopEnd: تعيين نهاية الحلقة
+  interface: مشغل الوسائط
+  loop: عقدة
   restart: إعادة بدء
   restart2: العودة إلى البداية
+  setLoop: تعيين حلقة
+  start: بداية
   toggle_dark: التغيير إلى الوضع المظلم
   toggle_langs: تغيير اللغة
 intro:

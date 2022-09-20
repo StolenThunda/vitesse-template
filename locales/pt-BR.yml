@@ -3,11 +3,16 @@ button:
   back: Voltar
   back5: Voltar 5 segundos
   clearLoop: Limpar loop
+  end: Fim
+  forward5: Avançar 5 segundos
   go: Ir
   home: Início
-  loopEnd: Definir fim de loop
+  interface: Reprodutor de mídia
+  loop: Ciclo
   restart: Reiniciar
   restart2: De volta ao início
+  setLoop: Definir loop
+  start: Começar
   toggle_dark: Alternar modo escuro
   toggle_langs: Mudar de idioma
 intro:

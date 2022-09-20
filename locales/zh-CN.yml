@@ -3,11 +3,16 @@ button:
   back: 返回
   back5: 返回 5 秒
   clearLoop: 清除循环
+  end: 结尾
+  forward5: 前进 5 秒
   go: 确定
   home: 首页
-  loopEnd: 设置循环结束
+  interface: 媒体播放器
+  loop: 环形
   restart: 重新开始
   restart2: 回到起点
+  setLoop: 设置循环
+  start: 开始
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
 intro:

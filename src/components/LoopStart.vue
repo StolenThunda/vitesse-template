@@ -2,14 +2,14 @@
   <div ref="domRef">
     <Control
       keys="b"
-      :label=" t( 'button.loopStart' ) "
+      :label=" t( 'button.start' ) "
       @click="settings.setLoopStart(currentTime)"
       >
       <div
         class="i-mdi-movie-open-edit"
-        :title="t( 'button.loopStart' ) "
+        :title="t( 'button.start' ) "
       ></div>
-      <Tooltip>{{ t( 'button.loopStart' )  }} (b)</Tooltip>
+      <Tooltip>{{ t( 'button.start' )  }} (b)</Tooltip>
     </Control>
   </div>
 </template>

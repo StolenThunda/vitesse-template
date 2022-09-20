@@ -3,14 +3,20 @@ button:
   back: 뒤로가기
   back5: 뒤로 5초
   clearLoop: 루프 지우기
+  end: 끝
+  forward5: 앞으로 5초
   go: 이동
   home: 홈
-  loopEnd: 루프 종료 설정
+  interface: 미디어 플레이어
+  loop: 고리
   restart: 재시작
   restart2: 처음으로 돌아가기
+  setLoop: 루프 설정
+  start: 시작
   toggle_dark: 다크모드 토글
   toggle_langs: 언어 변경
 intro:
+  aka: 또한 ~으로 알려진
   desc: Vite 애플리케이션 템플릿
   dynamic-route: 다이나믹 라우트 데모
   hi: 안녕, {name}!

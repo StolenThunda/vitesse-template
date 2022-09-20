@@ -3,11 +3,16 @@ button:
   back: Kembali
   back5: Kembali 5 detik
   clearLoop: Hapus Lingkaran
+  end: Akhir
+  forward5: Maju 5 detik
   go: Pergi
   home: Beranda
-  loopEnd: Setel Akhir Lingkaran
+  interface: Pemutar Media
+  loop: Lingkaran
   restart: Mengulang kembali
   restart2: Kembali ke awal
+  setLoop: Setel Putaran
+  start: Awal
   toggle_dark: Ubah ke mode gelap
   toggle_langs: Ubah bahasa
 intro:

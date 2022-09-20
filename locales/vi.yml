@@ -3,14 +3,20 @@ button:
   back: Quay lại
   back5: Quay lại 5 giây
   clearLoop: Xóa vòng lặp
+  end: Chấm dứt
+  forward5: Tua đi 5 giây
   go: Đi
   home: Khởi đầu
-  loopEnd: Đặt kết thúc vòng lặp
+  interface: Media Player
+  loop: Vòng
   restart: Khởi động lại
   restart2: Trở lại từ đầu
+  setLoop: Đặt vòng lặp
+  start: Bắt đầu
   toggle_dark: Chuyển đổi chế độ tối
   toggle_langs: Thay đổi ngôn ngữ
 intro:
+  aka: Còn được biết là
   desc: Ý kiến cá nhân Vite Template để bắt đầu
   dynamic-route: Bản giới thiệu về dynamic route
   hi: Hi, {name}!

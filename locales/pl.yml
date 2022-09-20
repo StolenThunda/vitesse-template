@@ -3,11 +3,16 @@ button:
   back: Wróć
   back5: Powrót 5 sekund
   clearLoop: Wyczyść pętlę
+  end: Koniec
+  forward5: 5 sekund do przodu
   go: WEJDŹ
   home: Strona główna
-  loopEnd: Ustaw koniec pętli
+  interface: Odtwarzacz multimedialny
+  loop: Pętla
   restart: Uruchom ponownie
   restart2: Powrót do początku
+  setLoop: Ustaw pętlę
+  start: Początek
   toggle_dark: Ustaw tryb nocny
   toggle_langs: Zmień język
 intro:

@@ -3,12 +3,16 @@ button:
   back: Zurück
   back5: Zurück 5 Sek
   clearLoop: Schleife löschen
+  end: Ende
   forward5: 5 Sek. vor
   go: Los
   home: Startseite
-  loopEnd: Schleifenende einstellen
+  interface: Media Player
+  loop: Schleife
   restart: Neu starten
   restart2: Zurück zum Anfang
+  setLoop: Schleife einstellen
+  start: Anfang
   toggle_dark: Dunkelmodus umschalten
   toggle_langs: Sprachen ändern
 intro:

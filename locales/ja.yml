@@ -3,14 +3,20 @@ button:
   back: 戻る
   back5: 戻る 5 秒
   clearLoop: クリアループ
+  end: 終わり
+  forward5: 5秒進む
   go: 進む
   home: ホーム
-  loopEnd: ループエンドの設定
+  interface: メディア プレーヤー
+  loop: ループ
   restart: 再起動
   restart2: 最初に戻る
+  setLoop: ループを設定
+  start: 始める
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
 intro:
+  aka: としても知られている
   desc: 固執された Vite スターターテンプレート
   dynamic-route: 動的ルートのデモ
   hi: こんにちは、{name}!

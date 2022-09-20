@@ -3,11 +3,16 @@ button:
   back: Geri
   back5: 5 saniye geri
   clearLoop: Döngüyü Temizle
+  end: Son
+  forward5: 5 sn ileri
   go: İLERİ
   home: Anasayfa
-  loopEnd: Döngü Sonunu Ayarla
+  interface: Medya oynatıcı
+  loop: Döngü
   restart: Tekrar başlat
   restart2: Başa dönüş
+  setLoop: Döngü Ayarla
+  start: Başlama
   toggle_dark: Karanlık modu değiştir
   toggle_langs: Dilleri değiştir
 intro:

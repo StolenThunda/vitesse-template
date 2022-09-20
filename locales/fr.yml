@@ -3,11 +3,16 @@ button:
   back: Retour
   back5: Retour 5 s
   clearLoop: Effacer la boucle
+  end: Fin
+  forward5: Avancer 5 s
   go: Essayer
   home: Accueil
-  loopEnd: Définir la fin de la boucle
+  interface: Lecteur multimédia
+  loop: Boucle
   restart: Redémarrer
   restart2: Retour au début
+  setLoop: Définir la boucle
+  start: Commencer
   toggle_dark: Basculer en mode sombre
   toggle_langs: Changer de langue
 intro:
